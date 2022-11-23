@@ -1,0 +1,29 @@
+.button {
+  color: white;
+  background-color: #485461;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.4em;
+  border: none;
+  border-right: 1px solid #28313b;
+  border-bottom: 1px solid #28313b;
+}
+
+.button:active {
+  background-color: #545b63;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.operators {
+  background-color: #ff9500;
+}
+
+.button .operators:active {
+  background-color: #f99c18;
+}
+
+.twoColumns {
+  grid-column: span 2;
+}
