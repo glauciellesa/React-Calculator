@@ -3,7 +3,7 @@
 This was a project made to practice useState in React, as well as improve my knowledge in CSS.
 
 <p align="center">
-<img src="./src/img/calculator.gif" width="100%" alt="calculator">
+<img src="./src/component/img/calculator.gif" width="100%" alt="calculator">
 
 </p>
 
