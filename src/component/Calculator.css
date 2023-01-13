@@ -1,3 +1,7 @@
+.myTitle {
+  font-size: 35px;
+  font-weight: 600;
+}
 .wrapper {
   margin-top: 10px;
   width: 260px;

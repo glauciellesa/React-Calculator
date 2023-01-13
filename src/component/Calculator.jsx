@@ -112,134 +112,157 @@ const Calculator = () => {
   const [state, setState] = useState(initialState);
 
   return (
-    <div className="wrapper">
-      <Screen>{state.screenValue}</Screen>
-      <KeyBoard>
-        <Button
-          className="button"
-          click={() => dispatch({ type: "reset" }, state, setState)}
-        >
-          AC
-        </Button>
-        <Button
-          value=""
-          className="button"
-          click={() => dispatch({ type: "plusOrMinus" }, state, setState)}
-        >
-          +/-
-        </Button>
-        <Button
-          value="%"
-          className="button"
-          click={() => dispatch({ type: "percentage" }, state, setState)}
-        >
-          %
-        </Button>
-        <Button
-          className="button operators"
-          click={() =>
-            dispatch({ type: "operation", value: "/" }, state, setState)
-          }
-        >
-          ÷
-        </Button>
-        <Button
-          className="button"
-          click={() => dispatch({ type: "number", value: 7 }, state, setState)}
-        >
-          7
-        </Button>
-        <Button
-          className="button"
-          click={() => dispatch({ type: "number", value: 8 }, state, setState)}
-        >
-          8
-        </Button>
-        <Button
-          className="button"
-          click={() => dispatch({ type: "number", value: 9 }, state, setState)}
-        >
-          9
-        </Button>
-        <Button
-          className="button operators"
-          click={() =>
-            dispatch({ type: "operation", value: "*" }, state, setState)
-          }
-        >
-          x
-        </Button>
-        <Button
-          className="button"
-          click={() => dispatch({ type: "number", value: 4 }, state, setState)}
-        >
-          4
-        </Button>
-        <Button
-          className="button"
-          click={() => dispatch({ type: "number", value: 5 }, state, setState)}
-        >
-          5
-        </Button>
-        <Button
-          className="button"
-          click={() => dispatch({ type: "number", value: 6 }, state, setState)}
-        >
-          6
-        </Button>
-        <Button
-          className="button operators"
-          click={() =>
-            dispatch({ type: "operation", value: "-" }, state, setState)
-          }
-        >
-          -
-        </Button>
-        <Button
-          className="button"
-          click={() => dispatch({ type: "number", value: 1 }, state, setState)}
-        >
-          1
-        </Button>
-        <Button
-          className="button"
-          click={() => dispatch({ type: "number", value: 2 }, state, setState)}
-        >
-          2
-        </Button>
-        <Button
-          className="button"
-          click={() => dispatch({ type: "number", value: 3 }, state, setState)}
-        >
-          3
-        </Button>
-        <Button
-          className="button operators"
-          click={() =>
-            dispatch({ type: "operation", value: "+" }, state, setState)
-          }
-        >
-          +
-        </Button>
-        <Button
-          className="button twoColumns"
-          click={() => dispatch({ type: "number", value: 0 }, state, setState)}
-        >
-          0
-        </Button>
-        <Button type="dot" value="." className="button">
-          .
-        </Button>
-        <Button
-          className="button operators"
-          click={() =>
-            dispatch({ type: "calculate", value: "=" }, state, setState)
-          }
-        >
-          =
-        </Button>
-      </KeyBoard>
-    </div>
+    <>
+      <h1 className="myTitle">My calculator</h1>
+      <div className="wrapper">
+        <Screen>{state.screenValue}</Screen>
+        <KeyBoard>
+          <Button
+            className="button"
+            click={() => dispatch({ type: "reset" }, state, setState)}
+          >
+            AC
+          </Button>
+          <Button
+            value=""
+            className="button"
+            click={() => dispatch({ type: "plusOrMinus" }, state, setState)}
+          >
+            +/-
+          </Button>
+          <Button
+            value="%"
+            className="button"
+            click={() => dispatch({ type: "percentage" }, state, setState)}
+          >
+            %
+          </Button>
+          <Button
+            className="button operators"
+            click={() =>
+              dispatch({ type: "operation", value: "/" }, state, setState)
+            }
+          >
+            ÷
+          </Button>
+          <Button
+            className="button"
+            click={() =>
+              dispatch({ type: "number", value: 7 }, state, setState)
+            }
+          >
+            7
+          </Button>
+          <Button
+            className="button"
+            click={() =>
+              dispatch({ type: "number", value: 8 }, state, setState)
+            }
+          >
+            8
+          </Button>
+          <Button
+            className="button"
+            click={() =>
+              dispatch({ type: "number", value: 9 }, state, setState)
+            }
+          >
+            9
+          </Button>
+          <Button
+            className="button operators"
+            click={() =>
+              dispatch({ type: "operation", value: "*" }, state, setState)
+            }
+          >
+            x
+          </Button>
+          <Button
+            className="button"
+            click={() =>
+              dispatch({ type: "number", value: 4 }, state, setState)
+            }
+          >
+            4
+          </Button>
+          <Button
+            className="button"
+            click={() =>
+              dispatch({ type: "number", value: 5 }, state, setState)
+            }
+          >
+            5
+          </Button>
+          <Button
+            className="button"
+            click={() =>
+              dispatch({ type: "number", value: 6 }, state, setState)
+            }
+          >
+            6
+          </Button>
+          <Button
+            className="button operators"
+            click={() =>
+              dispatch({ type: "operation", value: "-" }, state, setState)
+            }
+          >
+            -
+          </Button>
+          <Button
+            className="button"
+            click={() =>
+              dispatch({ type: "number", value: 1 }, state, setState)
+            }
+          >
+            1
+          </Button>
+          <Button
+            className="button"
+            click={() =>
+              dispatch({ type: "number", value: 2 }, state, setState)
+            }
+          >
+            2
+          </Button>
+          <Button
+            className="button"
+            click={() =>
+              dispatch({ type: "number", value: 3 }, state, setState)
+            }
+          >
+            3
+          </Button>
+          <Button
+            className="button operators"
+            click={() =>
+              dispatch({ type: "operation", value: "+" }, state, setState)
+            }
+          >
+            +
+          </Button>
+          <Button
+            className="button twoColumns"
+            click={() =>
+              dispatch({ type: "number", value: 0 }, state, setState)
+            }
+          >
+            0
+          </Button>
+          <Button type="dot" value="." className="button">
+            .
+          </Button>
+          <Button
+            className="button operators"
+            click={() =>
+              dispatch({ type: "calculate", value: "=" }, state, setState)
+            }
+          >
+            =
+          </Button>
+        </KeyBoard>
+      </div>
+    </>
   );
 };
 
